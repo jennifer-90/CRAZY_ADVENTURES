@@ -1,0 +1,111 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4rem 8rem 2rem 2rem 6fr 1fr;
+  grid-gap: 4px;
+  grid-template-areas: " header header header " " content content content " " trips0 trips1 trips2 " " trips3 trips4 trips5 " " content2 content2 content2 " " footer footer footer ";
+}
+
+.item-1 {
+  background-color: #f38b0c;
+  padding: 1rem;
+}
+
+.item-2 {
+  background-color: #f6ce9e;
+  padding: 1rem;
+}
+
+.item-3 {
+  background-color: #eab676;
+  padding: 1rem;
+}
+
+.item-4 {
+  background-color: #eab676;
+  padding: 1rem;
+}
+
+.item-5 {
+  background-color: #eab676;
+  padding: 1rem;
+}
+
+.item-6 {
+  background-color: #eab676;
+  padding: 1rem;
+}
+
+.item-7 {
+  background-color: #eab676;
+  padding: 1rem;
+}
+
+.item-8 {
+  background-color: #eab676;
+  padding: 1rem;
+}
+
+.item-9 {
+  background-color: #f6ce9e;
+  padding: 1rem;
+}
+
+.item-10 {
+  background-color: #f6ce9e;
+  padding: 1rem;
+}
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-2 {
+  grid-area: content;
+}
+
+.item-3 {
+  grid-area: trips0;
+}
+
+.item-4 {
+  grid-area: trips1;
+}
+
+.item-5 {
+  grid-area: trips2;
+}
+
+.item-6 {
+  grid-area: trips3;
+}
+
+.item-7 {
+  grid-area: trips4;
+}
+
+.item-8 {
+  grid-area: trips5;
+}
+
+.item-9 {
+  grid-area: content2;
+}
+
+.item-10 {
+  grid-area: footer;
+}
+
+.introductory_text {
+  font-size: 10px;
+  text-align: center;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.items-trips {
+  font-size: 10px;
+  text-align: center;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+/*# sourceMappingURL=style.css.map */
