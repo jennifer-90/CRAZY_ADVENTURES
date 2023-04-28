@@ -35,8 +35,8 @@ $colors_items: (
         6: #b4ed97,
         7: #b4ed97,
         8: #b4ed97,
-        9: #f6ce9e,
-        10: #f6ce9e
+        9: #F5F5DCFF,
+        10: #b4ed97
 );
 
 
@@ -46,9 +46,6 @@ $colors_items: (
         display:block;
     }
 }
-
-
-
 
 .item-1{
     grid-area: header;
@@ -111,9 +108,7 @@ $colors_items: (
 li{
     display:inline-block;
     padding: 5px;
-
 }
-
 
 .menu-buttons a {
     margin-right: 0.6rem;
@@ -124,6 +119,18 @@ li{
     border-radius: 5px 25px;
     font-family:histe;
     font-size: 16px;
+}
+
+.menu-buttons a:hover {
+    background-color: #3e8e41;
+    box-shadow: dimgrey 2px 2px;
+}
+
+.menu-buttons a:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #abc772;
+    transform: translateY(8px);
+    cursor: grabbing;
 }
 
 nav{
@@ -144,53 +151,53 @@ nav{
     font-family: 'Edu NSW ACT Foundation', cursive;
 }
 
-.items-trips:hover {
+.item-3:hover{
     -ms-transform: scale(1.5);  /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.2);
     transition: transform 0.5s;
-
 }
 
+.item-4:hover{
+    -ms-transform: scale(1.5);  /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+
+
+
+
+
+
 .img_trips{
-    width: 110px;
+    width: 70%;
     border-radius: 5px;
 }
 
 
 /*----- RS -----------*/
 
-.RS {
-    font-size: 25px;
-    text-align: right;
-    padding: 20px;
-}
-
-.RS li {
-    display:inline;
-}
-
-.RS a {
-    display:inline;
-    list-style-type: none;
-    text-decoration:none;
+.social_networks a {
+    text-decoration: none;
     color:#5fce82;
 }
 
-.RS a:active {
-    transform: translateY(8px);
-    cursor: grabbing;
-    box-shadow: 0 5px #abc772;
+.social_networks{
+    text-align: right;
+    font-size:15px;
 }
 
-
-
+.social_networks a:active{
+    cursor: grabbing;
+}
 
 
 @media screen and (min-width: 780px) {
     main{
         grid-template-columns:repeat(6, 1fr);
-        grid-template-rows: 4rem 15rem 8rem 6fr 1fr;
+        grid-template-rows: 4rem 13rem 10rem 6fr 1fr;
         grid-template-areas:
   " header header header header header header "
   " content content content content content content "
