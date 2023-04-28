@@ -1,63 +1,73 @@
+@font-face {
+  font-family: histe;
+  src: url(../typos/histeagin.ttf);
+}
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 4rem 8rem 2rem 2rem 6fr 1fr;
+  grid-template-rows: 4rem 15rem 8rem 8rem 6fr 1fr;
   grid-gap: 4px;
   grid-template-areas: " header header header " " content content content " " trips0 trips1 trips2 " " trips3 trips4 trips5 " " content2 content2 content2 " " footer footer footer ";
 }
 
+body {
+  background-color: beige;
+}
+
 .item-1 {
-  background-color: #f38b0c;
-  padding: 1rem;
+  background-color: #b4ed97;
+  display: block;
 }
 
 .item-2 {
-  background-color: #f6ce9e;
-  padding: 1rem;
+  background-color: beige;
+  display: block;
 }
 
 .item-3 {
-  background-color: #eab676;
-  padding: 1rem;
+  background-color: #b4ed97;
+  display: block;
 }
 
 .item-4 {
-  background-color: #eab676;
-  padding: 1rem;
+  background-color: #b4ed97;
+  display: block;
 }
 
 .item-5 {
-  background-color: #eab676;
-  padding: 1rem;
+  background-color: #b4ed97;
+  display: block;
 }
 
 .item-6 {
-  background-color: #eab676;
-  padding: 1rem;
+  background-color: #b4ed97;
+  display: block;
 }
 
 .item-7 {
-  background-color: #eab676;
-  padding: 1rem;
+  background-color: #b4ed97;
+  display: block;
 }
 
 .item-8 {
-  background-color: #eab676;
-  padding: 1rem;
+  background-color: #b4ed97;
+  display: block;
 }
 
 .item-9 {
   background-color: #f6ce9e;
-  padding: 1rem;
+  display: block;
 }
 
 .item-10 {
   background-color: #f6ce9e;
-  padding: 1rem;
+  display: block;
 }
 
 .item-1 {
   grid-area: header;
+  border-radius: 5px;
+  box-shadow: dimgrey 2px 2px;
 }
 
 .item-2 {
@@ -66,26 +76,38 @@ main {
 
 .item-3 {
   grid-area: trips0;
+  box-shadow: dimgrey 2px 2px;
+  border-radius: 5px;
 }
 
 .item-4 {
   grid-area: trips1;
+  box-shadow: dimgrey 2px 2px;
+  border-radius: 5px;
 }
 
 .item-5 {
   grid-area: trips2;
+  box-shadow: dimgrey 2px 2px;
+  border-radius: 5px;
 }
 
 .item-6 {
   grid-area: trips3;
+  box-shadow: dimgrey 2px 2px;
+  border-radius: 5px;
 }
 
 .item-7 {
   grid-area: trips4;
+  box-shadow: dimgrey 2px 2px;
+  border-radius: 5px;
 }
 
 .item-8 {
   grid-area: trips5;
+  box-shadow: dimgrey 2px 2px;
+  border-radius: 5px;
 }
 
 .item-9 {
@@ -96,6 +118,28 @@ main {
   grid-area: footer;
 }
 
+/*------ Menu ----------------*/
+li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.menu-buttons a {
+  margin-right: 0.6rem;
+  padding: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #5fce82;
+  border-radius: 5px 25px;
+  font-family: histe;
+  font-size: 16px;
+}
+
+nav {
+  text-align: center;
+}
+
+/*------ content items ----------------*/
 .introductory_text {
   font-size: 10px;
   text-align: center;
@@ -106,6 +150,50 @@ main {
   font-size: 10px;
   text-align: center;
   font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.items-trips:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+.img_trips {
+  width: 110px;
+  border-radius: 5px;
+}
+
+/*----- RS -----------*/
+.RS {
+  font-size: 25px;
+  text-align: right;
+  padding: 20px;
+}
+
+.RS li {
+  display: inline;
+}
+
+.RS a {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+  color: #5fce82;
+}
+
+.RS a:active {
+  transform: translateY(8px);
+  cursor: grabbing;
+  box-shadow: 0 5px #abc772;
+}
+
+@media screen and (min-width: 780px) {
+  main {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 4rem 15rem 8rem 6fr 1fr;
+    grid-template-areas: " header header header header header header " " content content content content content content " " trips0 trips1 trips2 trips3 trips4 trips5 " " content2 content2 content2 content2 content2 content2 " " footer footer footer footer footer footer ";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
