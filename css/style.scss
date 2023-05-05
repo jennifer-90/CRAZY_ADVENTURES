@@ -166,9 +166,34 @@ nav{
 }
 
 
+.item-5:hover{
+    -ms-transform: scale(1.5);  /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.item-6:hover{
+    -ms-transform: scale(1.5);  /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.item-7:hover{
+    -ms-transform: scale(1.5);  /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
 
 
-
+.item-8:hover{
+    -ms-transform: scale(1.5);  /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
 
 
 .img_trips{
