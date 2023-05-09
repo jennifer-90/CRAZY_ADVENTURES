@@ -6,7 +6,14 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
   <link rel="stylesheet" href="css/icofont.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&family=Single+Day&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -38,12 +45,11 @@
          <li><a href=""><i class="icofont-instagram"></i></a></li>
          <li><a href=""><i class="icofont-linkedin"></i></a> </li>
          <li><a href=""><i class="icofont-brand-youtube"></i></a></li>
-         <li><a href=""><i class="icofont-facebook-messenger"></i></a></li>
       </div>
 
     <!--- Introduction text --->
      <div class="introductory_text">
-      <h2>* CRAZY ADVENTURES &#128170; *</h2> <br>
+      <h1>* CRAZY ADVENTURES *</h1> <br>
           <p> Welcome to our website, which offers a selection of unusual and crazy adventures to break out of your
               daily routine and experience unique experiences. <br> Whether you are with family, friends or solo, we
               have trips for all tastes and desires. <br><br>
@@ -56,7 +62,7 @@
 
               Let yourself be surprised and come and experience unforgettable adventures with us!<br></p>
 
-       <h3><br>Here are some crazy adventures for you:</h3>
+       <h2>Here are some crazy adventures for you:</h2>
      </div>
   </div>
 
@@ -65,44 +71,43 @@
   <!-------------------- ITEMS TRIPS (x6) ---------------------->
 
   <div class="item-3">
-    <p class="items-trips">ESCAPE GAME <br><br>
-      <a href="web_page/trips/escape_game.html">
-          <img class="img_trips" src="img/img_index/escape_game/door-gb00c63cfc_1280.jpg" alt=""></a></p>
+
+      <a class="link_items" href="web_page/trips/escape_game.html"> <p class="items-trips">ESCAPE GAME </p>
+         </a>
   </div>
 
   <div class="item-4">
-    <p class="items-trips">HAUNTED HOUSES<br><br>
-      <a href="web_page/trips/haunted_houses.html"> <img class="img_trips" src="img/img_index/haunted_houses/stairs-g6e9c36260_1280.jpg"
-                                                         alt=""></a>
-    </p>
+
+      <a class="link_items" href="web_page/trips/haunted_houses.html"><p class="items-trips">HAUNTED HOUSES</p> </a>
+
   </div>
 
   <div class="item-5">
-    <p class="items-trips">MUDATHLON<br><br>
-      <a href="web_page/trips/mudathlon$.html"> <img class="img_trips" src="img/img_index/mudathlon/lady-gce45c54a1_1280.jpg" alt=""></a>
-    </p>
+
+      <a class="link_items" href="web_page/trips/mudathlon$.html"> <p class="items-trips">MUDATHLON</p></a>
+
   </div>
 
   <div class="item-6">
-    <p class="items-trips">THE HOTEL OF ILLUSIONS<br><br>
-      <a href="web_page/trips/the_hotel_of_illusions.html"> <img class="img_trips"
-                                                                 src="img/img_index/hotel_of_illusions/pexels-cottonbro-studio-6491957.jpg"
-                                                                 alt=""></a>
-    </p>
+
+      <a class="link_items" href="web_page/trips/the_hotel_of_illusions.html"> <p class="items-trips">THE HOTEL OF
+                                                                                                      ILLUSIONS</p></a>
+
   </div>
 
   <div class="item-7">
-    <p class="items-trips">THE ROAD TRIP OF CHALLENGES<br><br>
-      <a href="web_page/trips/the_road_trip_of_challenges.html">
-        <img class="img_trips" src="img/img_index/road_trip_of_challenges/martin-sticks-g512858e29_1280.jpg" alt=""></a>
 
-    </p>
+      <a class="link_items" href="web_page/trips/the_road_trip_of_challenges.html"><p class="items-trips">THE ROAD
+                                                                                                          TRIP OF CHALLENGES </p>
+      </a>
+
+
   </div>
 
   <div class="item-8">
-    <p class="items-trips">JUMANJI<br><br>
-      <a href="web_page/trips/jumanji.html"> <img class="img_trips" src="img/img_index/jumanji/hiker-exploring-wilderness.jpg" alt=""></a>
-    </p>
+
+      <a class="link_items" href="web_page/trips/jumanji.html"><p class="items-trips">JUMANJI</p> </a>
+
   </div>
 
 
@@ -110,7 +115,7 @@
 
   <div class="item-9">
     <div class="introductory_text">
-      <h3><br>The mystery trip: <br></h3>
+      <h2><br>The mystery trip: <br></h2>
 
       <p>
           The "mystery trip" concept is a unique travel experience that involves signing up for a trip without
@@ -130,6 +135,28 @@
           We invite you to sign up for our "mystery trip" to experience an unforgettable adventure and let yourself be surprised by the unknown.
       </p>
 
+            <fieldset>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="text" id="firstname" name="firstname" placeholder="FirstName"> <br>
+
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="number" id="number" name="number" placeholder="Budget"> <br>
+
+                <input type="date" id="date" name="date">
+                <input type="date" id="date2" name="date2"> <br><br>
+
+                <input type="range" id="budget" name="budget" ><br>
+
+                <input type="number" id="nb_pers" name="nb_pers" placeholder="Nbre personnes"><br>
+
+                <label for="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                </label>
+
+                <label for="checkbox"><input type="checkbox" id="checkbox" name="checkbox"></label>
+                <label for="checkbox"><input type="checkbox" id="checkbox" name="checkbox"></label>
+            </fieldset>
+        <br>
 
   </div>
 

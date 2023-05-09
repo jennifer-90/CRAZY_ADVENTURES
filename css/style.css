@@ -10,6 +10,39 @@ body {
   background-color: beige;
 }
 
+/*------ Menu ------------------------------------------------------------------------------------------------*/
+li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.menu-buttons a {
+  margin-right: 0.6rem;
+  padding: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  background-image: url("../img/menu/pexels-elias-tigiser-2757549.jpg");
+  border-radius: 5px 25px;
+  font-size: 20px;
+}
+
+.menu-buttons a:hover {
+  background-image: url("../img/menu/pexels-gustavo-cruz-1592119 (3).jpg");
+  box-shadow: dimgrey 2px 2px;
+}
+
+.menu-buttons a:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #abc772;
+  transform: translateY(8px);
+  cursor: grabbing;
+}
+
+nav {
+  text-align: center;
+}
+
+/*----------- content items -----------------------------------------------------------------------------------*/
 .item-1 {
   background-color: #b4ed97;
   display: block;
@@ -17,36 +50,6 @@ body {
 
 .item-2 {
   background-color: beige;
-  display: block;
-}
-
-.item-3 {
-  background-color: #b4ed97;
-  display: block;
-}
-
-.item-4 {
-  background-color: #b4ed97;
-  display: block;
-}
-
-.item-5 {
-  background-color: #b4ed97;
-  display: block;
-}
-
-.item-6 {
-  background-color: #b4ed97;
-  display: block;
-}
-
-.item-7 {
-  background-color: #b4ed97;
-  display: block;
-}
-
-.item-8 {
-  background-color: #b4ed97;
   display: block;
 }
 
@@ -64,46 +67,61 @@ body {
   grid-area: header;
   border-radius: 5px;
   box-shadow: dimgrey 2px 2px;
+  background: rgb(249, 249, 252);
+  background: radial-gradient(circle, rgb(249, 249, 252) 0%, rgb(180, 237, 151) 42%, rgba(0, 212, 255, 0.1963957458) 100%);
 }
 
 .item-2 {
   grid-area: content;
+  background-image: url("img/img_index/background/body_index/pexels-cottonbro-studio-5966315.jpg");
 }
 
 .item-3 {
   grid-area: trips0;
   box-shadow: dimgrey 2px 2px;
   border-radius: 5px;
+  background-image: url("../img/img_index/escape_game/door-gb00c63cfc_1280.jpg");
+  background-size: cover;
 }
 
 .item-4 {
   grid-area: trips1;
   box-shadow: dimgrey 2px 2px;
   border-radius: 5px;
+  background-image: url("../img/img_index/haunted_houses/stairs-g6e9c36260_1280.jpg");
+  background-size: cover;
 }
 
 .item-5 {
   grid-area: trips2;
   box-shadow: dimgrey 2px 2px;
   border-radius: 5px;
+  background-image: url("../img/img_index/mudathlon/lady-gce45c54a1_1280.jpg");
+  background-size: cover;
 }
 
 .item-6 {
   grid-area: trips3;
   box-shadow: dimgrey 2px 2px;
   border-radius: 5px;
+  background-image: url("../img/img_index/hotel_of_illusions/pexels-cottonbro-studio-6491957.jpg");
+  background-size: cover;
 }
 
 .item-7 {
   grid-area: trips4;
   box-shadow: dimgrey 2px 2px;
   border-radius: 5px;
+  background-image: url("../img/img_index/road_trip_of_challenges/martin-sticks-g512858e29_1280.jpg");
+  background-size: cover;
 }
 
 .item-8 {
   grid-area: trips5;
   box-shadow: dimgrey 2px 2px;
   border-radius: 5px;
+  background-image: url("../img/img_index/jumanji/hiker-exploring-wilderness.jpg");
+  background-size: cover;
 }
 
 .item-9 {
@@ -112,49 +130,25 @@ body {
 
 .item-10 {
   grid-area: footer;
+  background: rgb(249, 249, 252);
+  background: radial-gradient(circle, rgb(249, 249, 252) 0%, rgb(180, 237, 151) 42%, rgba(0, 212, 255, 0.1963957458) 100%);
 }
 
-/*------ Menu ----------------*/
-li {
-  display: inline-block;
-  padding: 5px;
-}
-
-.menu-buttons a {
-  margin-right: 0.6rem;
-  padding: 0.8rem;
-  color: #fff;
-  text-decoration: none;
-  background-color: #5fce82;
-  border-radius: 5px 25px;
-  font-size: 20px;
-}
-
-.menu-buttons a:hover {
-  background-color: #3e8e41;
-  box-shadow: dimgrey 2px 2px;
-}
-
-.menu-buttons a:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #abc772;
-  transform: translateY(8px);
-  cursor: grabbing;
-}
-
-nav {
-  text-align: center;
-}
-
-/*------ content items ----------------*/
 .introductory_text {
-  font-size: 1.1em;
+  font-size: 1em;
   text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1, h2 {
+  font-family: "Fredericka the Great", cursive;
 }
 
 .items-trips {
   font-size: 16px;
   text-align: center;
+  padding: 20px;
+  background: rgba(247, 248, 247, 0.25);
 }
 
 .item-3:hover {
@@ -199,12 +193,13 @@ nav {
   transition: transform 0.5s;
 }
 
-.img_trips {
-  width: 70%;
-  border-radius: 5px;
+.link_items {
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
 }
 
-/*----- RS -----------*/
+/*----- RS -------------------------------------------------------------------------------------------------*/
 .social_networks a {
   text-decoration: none;
   color: #5fce82;
@@ -212,15 +207,17 @@ nav {
 
 .social_networks {
   text-align: right;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .social_networks a:active {
   cursor: grabbing;
 }
 
+/*----- footer ----------------------------------------------------------------------------------------------*/
 .text-footer {
   text-align: right;
+  font-family: "Fredericka the Great", cursive;
 }
 
 @media screen and (min-width: 780px) {

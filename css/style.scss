@@ -1,5 +1,7 @@
 
 
+
+
 // On commence par le mobile first:
 main{
     display: grid;
@@ -16,88 +18,21 @@ main{
 }
 
 body{
-    background-color:#F5F5DCFF;
+    background-color: #F5F5DCFF;
 }
+
+
 
 $colors_items: (
 
         1: #b4ed97,
         2: #F5F5DCFF,
-        3: #b4ed97,
-        4: #b4ed97,
-        5: #b4ed97,
-        6: #b4ed97,
-        7: #b4ed97,
-        8: #b4ed97,
         9: #F5F5DCFF,
         10: #b4ed97
 );
 
 
-@each $key, $value in $colors_items{
-    .item-#{$key} {
-        background-color: $value;
-        display:block;
-    }
-}
-
-.item-1{
-    grid-area: header;
-    border-radius: 5px;
-    box-shadow: dimgrey 2px 2px;
-
-}.item-2{
-     grid-area: content;
-
-
- }.item-3{
-      grid-area: trips0;
-       box-shadow: dimgrey 2px 2px;
-       border-radius: 5px;
-
-  }
-
-.item-4{
-    grid-area: trips1;
-    box-shadow: dimgrey 2px 2px;
-    border-radius: 5px;
-}
-
-.item-5{
-    grid-area: trips2;
-    box-shadow: dimgrey 2px 2px;
-    border-radius: 5px;
-}
-
-.item-6{
-    grid-area: trips3;
-    box-shadow: dimgrey 2px 2px;
-    border-radius: 5px;
-}
-
-.item-7{
-    grid-area: trips4;
-    box-shadow: dimgrey 2px 2px;
-    border-radius: 5px;
-}
-
-.item-8{
-    grid-area: trips5;
-    box-shadow: dimgrey 2px 2px;
-    border-radius: 5px;
-}
-
-.item-9{
-    grid-area: content2;
-
-}
-
-.item-10{
-    grid-area: footer;
-
-}
-
-/*------ Menu ----------------*/
+/*------ Menu ------------------------------------------------------------------------------------------------*/
 
 li{
     display:inline-block;
@@ -109,13 +44,13 @@ li{
     padding: 0.8rem;
     color: #fff;
     text-decoration: none;
-    background-color: #5fce82;
+    background-image: url("../img/menu/pexels-elias-tigiser-2757549.jpg");
     border-radius: 5px 25px;
     font-size: 20px;
 }
 
 .menu-buttons a:hover {
-    background-color: #3e8e41;
+    background-image: url("../img/menu/pexels-gustavo-cruz-1592119 (3).jpg");
     box-shadow: dimgrey 2px 2px;
 }
 
@@ -131,15 +66,105 @@ nav{
 }
 
 
-/*------ content items ----------------*/
+/*----------- content items -----------------------------------------------------------------------------------*/
+
+@each $key, $value in $colors_items{
+    .item-#{$key} {
+        background-color: $value;
+        display:block;
+    }
+}
+
+.item-1{
+    grid-area: header;
+    border-radius: 5px;
+    box-shadow: dimgrey 2px 2px;
+    background: rgb(249,249,252);
+    background: radial-gradient(circle, rgba(249,249,252,1) 0%, rgba(180,237,151,1) 42%, rgba(0,212,255,0.1963957457983193) 100%);
+
+}.item-2{
+     grid-area: content;
+     background-image: url("img/img_index/background/body_index/pexels-cottonbro-studio-5966315.jpg");
+
+ }.item-3{
+      grid-area: trips0;
+      box-shadow: dimgrey 2px 2px;
+      border-radius: 5px;
+      background-image: url("../img/img_index/escape_game/door-gb00c63cfc_1280.jpg");
+      background-size: cover;
+  }
+
+.item-4{
+    grid-area: trips1;
+    box-shadow: dimgrey 2px 2px;
+    border-radius: 5px;
+    background-image: url("../img/img_index/haunted_houses/stairs-g6e9c36260_1280.jpg");
+    background-size: cover;
+}
+
+.item-5{
+    grid-area: trips2;
+    box-shadow: dimgrey 2px 2px;
+    border-radius: 5px;
+    background-image: url("../img/img_index/mudathlon/lady-gce45c54a1_1280.jpg");
+    background-size: cover;
+}
+
+.item-6{
+    grid-area: trips3;
+    box-shadow: dimgrey 2px 2px;
+    border-radius: 5px;
+    background-image: url("../img/img_index/hotel_of_illusions/pexels-cottonbro-studio-6491957.jpg");
+    background-size: cover;
+}
+
+.item-7{
+    grid-area: trips4;
+    box-shadow: dimgrey 2px 2px;
+    border-radius: 5px;
+    background-image: url("../img/img_index/road_trip_of_challenges/martin-sticks-g512858e29_1280.jpg");
+    background-size: cover;
+}
+
+.item-8{
+    grid-area: trips5;
+    box-shadow: dimgrey 2px 2px;
+    border-radius: 5px;
+    background-image: url("../img/img_index/jumanji/hiker-exploring-wilderness.jpg");
+    background-size: cover;
+}
+
+.item-9{
+    grid-area: content2;
+}
+
+.item-10{
+    grid-area: footer;
+    background: rgb(249,249,252);
+    background: radial-gradient(circle, rgba(249,249,252,1) 0%, rgba(180,237,151,1) 42%, rgba(0,212,255,0.1963957457983193) 100%);
+
+}
+
+
+
+
+
+
 .introductory_text{
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1,h2{
+    font-family: 'Fredericka the Great', cursive;
 }
 
 .items-trips{
     font-size: 16px;
     text-align: center;
+    padding: 20px;
+    background: rgba(247, 248, 247, 0.25);
 }
 
 .item-3:hover{
@@ -184,16 +209,17 @@ nav{
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.2);
     transition: transform 0.5s;
+
+}
+
+.link_items{
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
 }
 
 
-.img_trips{
-    width: 70%;
-    border-radius: 5px;
-}
-
-
-/*----- RS -----------*/
+/*----- RS -------------------------------------------------------------------------------------------------*/
 
 .social_networks a {
     text-decoration: none;
@@ -202,16 +228,25 @@ nav{
 
 .social_networks{
     text-align: right;
-    font-size:15px;
+    font-size:18px;
 }
 
 .social_networks a:active{
     cursor: grabbing;
 }
 
+
+
+
+/*----- footer ----------------------------------------------------------------------------------------------*/
+
 .text-footer{
     text-align: right;
+    font-family: 'Fredericka the Great', cursive;
+
 }
+
+
 @media screen and (min-width: 780px) {
     main{
         grid-template-columns:repeat(6, 1fr);
