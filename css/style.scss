@@ -215,7 +215,7 @@ nav{
 @media screen and (min-width: 780px) {
     main{
         grid-template-columns:repeat(6, 1fr);
-        grid-template-rows: 4rem 22rem 12rem 8fr 2fr;
+        grid-template-rows: 4rem 26rem 12rem 8fr 2fr;
         grid-template-areas:
   " header header header header header header "
   " content content content content content content "
