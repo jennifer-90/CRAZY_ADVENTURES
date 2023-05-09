@@ -65,6 +65,18 @@ nav{
     text-align: center;
 }
 
+.fleche_back{
+    text-decoration: none;
+    font-size: 40px;
+    text-align: left;
+}
+
+.fleche_soon{
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+}
+
 
 /*----------- content items -----------------------------------------------------------------------------------*/
 
@@ -140,6 +152,7 @@ nav{
 
 .item-10{
     grid-area: footer;
+    border-radius: 5px;
     background: rgb(249,249,252);
     background: radial-gradient(circle, rgba(249,249,252,1) 0%, rgba(180,237,151,1) 42%, rgba(0,212,255,0.1963957457983193) 100%);
 
@@ -235,8 +248,17 @@ h1,h2{
     cursor: grabbing;
 }
 
+/*----- formu ----------------------------------------------------------------------------------------------*/
 
+input{
+    border-radius: 5px;
+    padding:10px;
+}
 
+fieldset{
+    border-radius: 5px;
+    background: rgba(87, 210, 87, 0.15)
+}
 
 /*----- footer ----------------------------------------------------------------------------------------------*/
 
