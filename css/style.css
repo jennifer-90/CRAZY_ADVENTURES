@@ -1,7 +1,7 @@
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 4rem 15rem 8rem 8rem 6fr 1fr;
+  grid-template-rows: 0.5fr 3fr 0.5fr 0.5fr 7fr 1.5fr;
   grid-gap: 4px;
   grid-template-areas: " header header header " " content content content " " trips0 trips1 trips2 " " trips3 trips4 trips5 " " content2 content2 content2 " " footer footer footer ";
 }
@@ -235,7 +235,19 @@ input {
 
 fieldset {
   border-radius: 5px;
-  background: rgba(87, 210, 87, 0.15);
+  background-image: url("../img/formu/pexels-leon-macapagal-3027139.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.formu {
+  background: rgba(245, 245, 220, 0.52);
+  border-radius: 5px;
+}
+
+.p_formu {
+  background: rgba(245, 245, 220, 0.65);
+  font-style: italic;
 }
 
 /*----- footer ----------------------------------------------------------------------------------------------*/
@@ -247,7 +259,7 @@ fieldset {
 @media screen and (min-width: 780px) {
   main {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 4rem 26rem 12rem 8fr 2fr;
+    grid-template-rows: 0.5fr 3fr 1fr 7fr 1.5fr;
     grid-template-areas: " header header header header header header " " content content content content content content " " trips0 trips1 trips2 trips3 trips4 trips5 " " content2 content2 content2 content2 content2 content2 " " footer footer footer footer footer footer ";
   }
 }
