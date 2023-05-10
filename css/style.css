@@ -155,6 +155,7 @@ nav {
 
 h1, h2 {
   font-family: "Fredericka the Great", cursive;
+  text-align: center;
 }
 
 .items-trips {
@@ -210,6 +211,14 @@ h1, h2 {
   color: white;
   text-decoration: none;
   padding: 14px 25px;
+}
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 700px;
 }
 
 /*----- RS -------------------------------------------------------------------------------------------------*/
